@@ -1,33 +1,29 @@
-# Teacher_Directory
+# Django Teacher's Directory App
 
-<b>Setup</b>
-<br>
-The first thing to do is to clone the repository:
+This is a very simple website built with Django.
 
-$ git clone https://github.com/jaseemrahman/Teacher_Directory
-$ cd teacher_directory
-Create a virtual environment to install dependencies in and activate it:
+## Project Summary
+This web site manages teachers in a given school. It lets you add, view teachers in the directory. 
 
-$ virtualenv2 --no-site-packages tenv
-$ tenv/scripts/activate
-Then install the dependencies:
+## Running this project
 
-(env)$ pip install -r requirements.txt
-Note the (env) in front of the prompt. This indicates that this terminal session operates in a virtual environment set up by virtualenv2.
+First clone the repo using below command
 
-Once pip has finished downloading the dependencies:
+git clone https://github.com/jaseemrahman/Teacher_Directory.git
 
-(env)$ cd teacher_directory
-(env)$ python manage.py runserver
-And navigate to http://127.0.0.1:8000/.
-<br>
+Go to Teacher_Directory and create a virtual environment using below command (In Windows machine) .
 
-<b>Project Flow</b>
-<br>
-I am listed teacher list and profile button is able to show detail page. we have teacher bulk list importer option also.All user can able to do the importer option.
+py -3 -m venv .venv
+.venv\scripts\activate
 
-<b>Tests</b>
-<br>
-To run the tests, cd into the directory where manage.py is:
+Then install the project dependencies with
 
-(env)$ python manage.py test teacher_directory
+
+pip install -r requirements.txt
+
+Now you can run the project with this command
+
+
+python manage.py runserver
+
+Please navigate to http://127.0.0.1:8000/
