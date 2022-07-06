@@ -1,7 +1,7 @@
 # Teacher_Directory
 
-Setup
-<hr>
+<b>Setup</b>
+<br>
 The first thing to do is to clone the repository:
 
 $ git clone https://github.com/jaseemrahman/Teacher_Directory
@@ -20,13 +20,14 @@ Once pip has finished downloading the dependencies:
 (env)$ cd teacher_directory
 (env)$ python manage.py runserver
 And navigate to http://127.0.0.1:8000/.
+<br>
 
-Project Flow
-<hr>
+<b>Project Flow</b>
+<br>
 I am listed teacher list and profile button is able to show detail page. we have teacher bulk list importer option also.All user can able to do the importer option.
 
-Tests
-<hr>
+<b>Tests</b>
+<br>
 To run the tests, cd into the directory where manage.py is:
 
 (env)$ python manage.py test teacher_directory
