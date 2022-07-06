@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Registration</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type='submit' name='create user'>
+  </form>
+  {% for message in messages %}
+               <p id='messages'> {{message}}</p>
+            {% endfor %}
+            <br>
+            <a href='{% url 'home' %}'>HOME</a>
+{% endblock %}

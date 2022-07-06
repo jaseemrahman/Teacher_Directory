@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}{{dtl.first_name}} {{dtl.last_name}}{% endblock%}
+
+{% block content%}
+
+<div class='container w-25 text-center p-3 bg-info my-4'>
+<img src="{{MEDIA_URL}}{{dtl.profile_picture}}" style="width:300px;height:200px;">
+<h1>{{dtl.first_name}} {{dtl.last_name}}</h1>
+<p>Email: {{dtl.email_address}}</p>
+<p>Phone Number: {{dtl.phone_number}}</p>
+<p>Room Number: {{dtl.room_number}}</p>
+<p>Subjects Taught: {{dtl.subjects_taught}}</p>
+ 
+<a href='{% url 'home' %}'>TEACHER DIRECTORY</a>
+</div>
+{% endblock %}

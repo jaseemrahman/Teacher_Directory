@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title%}TEACHER DIRECTORY{% endblock%}
+{% load static %}
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<h2><u>Our Teachers</u></h2>
+    <ol>
+        {% for t in teacher %}
+        <li>
+            <a href="{% url 'details' t.id %}">
+               <h3> {{t.first_name}} {{t.last_name}}</h3>
+            </a>
+            {% endfor %}
+        </ol>
+        <hr>
+        <span>Hello, {{request.user}}</span>
+        <span> <a href='{% url 'logout' %}'>LOGOUT</a></span>
+        <br>
+        <a href='{% url 'login' %}'>LOGIN</a>       
+       <br>
+        <a href='{% url 'register' %}'>REGISTER</a>
+{% endblock %}

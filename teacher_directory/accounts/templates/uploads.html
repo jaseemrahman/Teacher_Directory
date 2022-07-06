@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}{% endblock%}
+uploads
+{% block content%}
+<br>
+<h2>Upload files</h2>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="file" accept=".csv" />
+    <br>
+    <br>
+    <input type="submit" class="btn btn-success" value="Submit">
+</form>
+<br>
+            <a href='{% url 'home' %}'>HOME</a>
+{% endblock %}
