@@ -5,6 +5,9 @@ This is a very simple website built with Django.
 ## Project Summary
 This web site manages teachers in a given school. It lets you add, view teachers in the directory. 
 
+## Prerequisites
+Python 3.8 or above
+
 ## Running this project
 
 First clone the repo using below command
